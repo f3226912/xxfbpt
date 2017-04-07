@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="/xxfbpt" location="0,0" size="0,0" />
+  <webResource name="index.jsp" path="/pages/index.jsp" location="0,0" size="0,0" />
+  <include file="modules/struts_user.xml" location="0,0" size="0,0" />
+</Struts2Diagram>
+

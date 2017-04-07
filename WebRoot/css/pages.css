@@ -1,0 +1,59 @@
+body {
+	overflow:auto;
+}
+td{ font-family: Verdana; font-size: 11px }
+#page {
+	margin: 5px;
+	border: 1px #D5E9FC solid;
+	background: url('../images01/page_bg.gif') 0px 1px repeat-x;
+	height: 100%;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.style1 {
+	border-collapse: collapse;
+	border-width: 0;
+	margin: 0 auto;
+}
+.style2 {
+	border: 1px solid #D9EBFC;
+	text-align: right;
+	padding-right: 10px;
+}
+.style4 {
+	border: 1px solid #D9EBFC;
+	padding-left: 5px;
+}
+.style5 {
+	border: 1px solid #D9EBFC;
+	text-align: center;
+	padding-right: 10px;
+	font-size:14px;
+}
+.style6 {
+	border: 1px solid #D9EBFC;
+	text-align: center;
+	padding-right: 10px;
+}
+.style7 {
+	border: 1px solid #D9EBFC;
+	padding-left: 5px;
+	text-align: right;
+}
+.style8 {
+		border-collapse: collapse;
+	border-width: 0;
+	margin: 0 auto;
+
+}
+.style10 {
+	text-align: center;
+	border: 1px solid #D5E9FC;
+	padding:0 10px;
+}
+.style11 {
+	text-align: left;
+	border: 1px solid #D5E9FC;
+	padding: 0 10px;
+}

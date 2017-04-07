@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+	<service xmlns="http://xfire.codehaus.org/config/1.0">
+		<name>xxfbptjk</name>
+		<serviceClass>
+			com.xxfbpt.webservice.IXxfbptwebservice
+		</serviceClass>
+		<implementationClass>
+			com.xxfbpt.webservice.XxfbptwebserviceImpl
+		</implementationClass>
+		<style>wrapped</style>
+		<use>literal</use>
+		<scope>application</scope>
+	</service></beans>

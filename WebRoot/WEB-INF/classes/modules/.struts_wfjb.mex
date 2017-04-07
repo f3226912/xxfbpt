@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="/wfjb" location="0,0" size="0,0">
+    <action name="user_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="list.jsp" />
+      </result>
+      <result name="interfaceUserlist">
+        <resourceEdge source="interfaceUserlist" routing="0" target="unitList.jsp" />
+      </result>
+      <result name="initInterfaceUser">
+        <resourceEdge source="initInterfaceUser" routing="0" target="addUnit.jsp" />
+      </result>
+      <result name="ptUserList">
+        <resourceEdge source="ptUserList" routing="0" target="ptUserList.jsp" />
+      </result>
+      <result name="initPtUser">
+        <resourceEdge source="initPtUser" routing="0" target="editPtUser.jsp" />
+      </result>
+      <result name="deptList">
+        <resourceEdge source="deptList" routing="0" target="deptList.jsp" />
+      </result>
+      <result name="deptshouquan" />
+    </action>
+    <action name="wfjb_*" location="0,0" size="0,0">
+      <result name="resourMx" />
+      <result name="resourceDetail" />
+    </action>
+    <action name="downloadAction" location="0,0" size="0,0">
+      <result name="SUCCESS" />
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/pages/user/list.jsp" location="0,0" size="0,0" />
+  <webResource name="wfjblist.jsp" path="/pages/wfjb/wfjblist.jsp" location="0,0" size="0,0" />
+  <webResource name="detail.jsp" path="/pages/wfjb/detail.jsp" location="0,0" size="0,0" />
+  <webResource name="unitList.jsp" path="/pages/quanxian/unitList.jsp" location="0,0" size="0,0" />
+  <webResource name="addUnit.jsp" path="/pages/quanxian/addUnit.jsp" location="0,0" size="0,0" />
+  <webResource name="ptUserList.jsp" path="/pages/quanxian/ptUserList.jsp" location="0,0" size="0,0" />
+  <webResource name="editPtUser.jsp" path="/pages/quanxian/editPtUser.jsp" location="0,0" size="0,0" />
+  <webResource name="deptList.jsp" path="/pages/quanxian/deptList.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

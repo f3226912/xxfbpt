@@ -1,0 +1,233 @@
+/* right */
+.content1 {
+	width: 1030px;
+	height: 720px;
+	background: #c7e5ff;
+}
+
+.roundedBox {
+	position: relative;
+	padding: 17px;
+	margin: 10px 0;
+}
+
+.corner {
+	position: absolute;
+	width: 17px;
+	height: 17px;
+}
+
+.topLeft {
+	top: 0;
+	left: 0;
+	background-position: -1px -1px;
+}
+
+.topRight {
+	top: 0;
+	right: 0;
+	background-position: -19px -1px;
+}
+
+.bottomLeft {
+	bottom: 0;
+	left: 0;
+	background-position: -1px -19px;
+}
+
+.bottomRight {
+	bottom: 0;
+	right: 0;
+	background-position: -19px -19px;
+}
+
+#type1 {
+	background-color: #f2f6f9;
+	width: 980px;
+	height: 680px;
+	margin: 0 auto;
+}
+
+#type1 .corner {
+	background-image: url(../images/corners-type1.gif);
+}
+
+.right {
+	width: 950px;
+	height: 650px;
+	padding: 0px 0 10px 0;
+	margin: 0 auto;
+}
+
+.table1 {
+	margin-bottom: 10px;
+	border-collapse: collapse;
+}
+
+.table1 td {
+	border: 1px solid #3c7eba;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+.datalist {
+	border: 1px solid #0058a3;
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	background-color: #eaf5ff;
+	font-size: 14px;
+}
+
+.datalist tr {
+	height: 32px;
+}
+
+.datalist tr.altrow {
+	background-color: #c7e5ff;
+	height: 32px;
+}
+
+.datalist td {
+	border: 1px solid #3c7eba;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+.datalist th {
+	border: 1px solid #3c7eba;
+	height: 32px;
+}
+
+.xz {
+	width: 500px;
+	border: 1px solid #666666;
+}
+
+.th1 {
+	background: url(../images/cxtjbj.gif) repeat-x;
+	border: 1px solid #3c7eba;
+	font-size: 14px;
+}
+
+.tr1 {
+	background: #c1d9ec;
+	background: url(../images/cxtjbj.gif) repeat-x;
+	border: 1px solid #3c7eba;
+}
+
+.tdl {
+	text-align: left;
+}
+
+.tdl input {
+	border: 1px solid #666666;
+}
+
+.tds {
+	background: #eaf5ff;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.bnt {
+	width: 76px;
+	height: 27px;
+	background: url(../images/an2.gif) no-repeat;
+	border: none;
+	font-weight: bold;
+}
+
+.tj {
+	border: none;
+}
+
+/* left */
+.applemenu {
+	margin: 5px 0;
+	padding: 0;
+	width: 182px;
+	height: 675px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.applemenu div.silverheader a {
+	width: 182px;
+	height: 22px;
+	background: url(../images/cd1.gif) no-repeat center left;
+	font-weight: bold;
+	font: normal 14px Tahoma, "Lucida Grande", "Trebuchet MS", Helvetica,
+		sans-serif;
+	color: #000;
+	display: block;
+	position: relative;
+	width: auto;
+	padding-top: 10px;
+	padding-left: 18px;
+	text-decoration: none;
+}
+
+.applemenu div.silverheader a:visited,.applemenu div.silverheader a:active
+	{
+	color: #000;
+}
+
+.applemenu div.selected a,.applemenu div.silverheader a:hover {
+	background-image: url(../images/ttttt.gif);
+	color: #000;
+}
+
+.applemenu div.submenu {
+	background: white;
+	padding: 5px;
+	height: auto;
+}
+
+.applemenu div a {
+	padding: 5px 10px;
+	background: #f2f6f9;
+	display: block;
+	border-bottom: 1px solid #d6d6d6;
+	color: #066;
+	font-size: 12px;
+}
+
+div .submenu a:hover {
+	background: #48b1ff;
+	color: #fff;
+	text-decoration: none;
+}
+
+.content2 {
+	width: 230px;
+	height: 720px;
+	background: #004f8a;
+	margin: 0 auto;
+	padding-top: 8px;
+}
+
+.left {
+	width: 200px;
+	height: 650px;
+	padding: 0px 0 10px 0;
+	margin: 0 auto;
+}
+
+#type2 {
+	background-color: #f2f6f9;
+	width: 182px;
+	height: 680px;
+	margin: 0 auto;
+}
+
+#type2 .corner {
+	background-image: url(../images/corners-type1.gif);
+}

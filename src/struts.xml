@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="/xxfbpt" extends="json-default" namespace="/">
+		<interceptors>
+			<!-- 权限拦截器 -->
+			<interceptor name="powerInterceptor" class="com.xxfbpt.interceptor.PowerInterceptor"/>
+			<interceptor-stack name="exampleStack">
+				<interceptor-ref name="defaultStack"/>
+				<interceptor-ref name="powerInterceptor"/>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="exampleStack"/>
+		<global-results>
+			<!-- 未授权操作重定向页面 -->
+			<result name="warn" type="redirect">/pages/errorpage/warning.jsp</result>
+			<!-- 异常转发页面 -->
+			<result name="error">/pages/errorpage/exception.jsp</result>
+			<result name="Exception">/pages/errorpage/nodata.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<!-- 异常捕获对象 -->
+			<exception-mapping result="error" exception="java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+	
+	<include file="modules/struts_wfjb.xml" />	
+</struts>    

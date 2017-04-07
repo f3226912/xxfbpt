@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="/wfjb" location="0,0" size="0,0">
+    <action name="wfjb_*" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="list.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/pages/user/list.jsp" location="307,640" size="150,55" />
+  <webResource name="edit.jsp" path="/pages/user/edit.jsp" location="27,255" size="150,55" />
+  <webResource name="jq_list.jsp" path="/pages/user/jq_list.jsp" location="298,10" size="150,55" />
+  <webResource name="main.jsp" path="/pages/inc/main.jsp" location="730,395" size="150,55" />
+  <webResource name="updatepwd.jsp" path="/pages/user/updatepwd.jsp" location="537,640" size="150,55" />
+</Struts2Diagram>
+

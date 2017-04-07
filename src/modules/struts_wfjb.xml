@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="/wfjb" extends="/xxfbpt" namespace="/wfjb">
+		<result-types> 
+			<result-type name="streamx" class="com.sunspoter.lib.web.struts2.dispatcher.StreamResultX"/>  
+		</result-types>
+		<action name="user_*" class="com.xxfbpt.ssh.action.wfjb.XxptUserAction" method="{1}">
+			<result name="list">/pages/user/list.jsp</result>
+			<result name="interfaceUserlist">/pages/quanxian/unitList.jsp</result>
+			<result name="initInterfaceUser">/pages/quanxian/addUnit.jsp</result>
+			<result name="ptUserList">/pages/quanxian/ptUserList.jsp</result>
+			<result name="initPtUser">/pages/quanxian/editPtUser.jsp</result>
+			<result name="deptList">/pages/quanxian/deptList.jsp</result>
+			<result name="deptshouquan">/pages/quanxian/deptShouquan.jsp</result>
+		</action>
+		
+		<action name="wfjb_*" class="com.xxfbpt.ssh.action.wfjb.XxfbptAction" method="{1}">
+			<result name="resourMx">/pages/wfjb/wfjblist.jsp</result>
+			<result name="resourceDetail">/pages/wfjb/detail.jsp</result>
+		</action>
+		
+		<!-- 文件下载action -->
+		<action name="downloadAction" class="com.xxfbpt.ssh.action.wfjb.XxfbptAction" method="downLoad">
+			<!-- type类型固定stream 为了解决下载取消异常，引入struts2-sunspoter-stream-1.0.jar，并修改type-->
+			<result name="SUCCESS" type="streamx">
+				<!-- 指定下载文件的内容类型，text/plain image/jpeg是默认类型 -->
+				<param name="contentType">application/octet-stream</param>
+				
+				<!-- 对应downLoadAction中的getInputStream()方法返回出值 -->
+				 <!-- inputName默认值是inputStream，如果action中用于读取下载文件内容的属性名是inputStream，那么可以省略这个参数 -->
+				<param name="inputName">inputStream</param>
+				 <!--动态获取文件名，从Action中的取得filename-->
+				<param name="contentDisposition">
+		            attachment;filename="${filename}"
+		        </param>
+		        <param name="bufferSize">102400</param>
+			</result>
+		</action>
+	</package>
+</struts>

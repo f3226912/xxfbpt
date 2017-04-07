@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+/*****全局样式*****/
+*{
+	margin:0;
+	padding:0;
+}
+.edittable{
+	font-size:12px;
+	width:500px;
+	border-collapse:collapse;
+}
+.edittable,.edittable tr,.edittable td,.edittable th{
+	border:1px solid #D2E9FF;
+}
+.edittable tr{
+	height:30px;
+	background-color:#EEF2FB;
+}
+/*****页面导航栏样式*****/
+#admin_title{
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	width:99.8%;
+	height:25px;
+	background-color:#353c44;
+}
+#admin_title .logo{
+	width:14px;
+	height:14px;
+	float:left;
+	margin-top:4px;
+	margin-left:10px;
+}
+#admin_title .title{
+	height:26px;
+	float:left;
+	font-size:12px;
+	color:white;
+	line-height:26px;
+	margin-left:10px;
+}
+#admin_main{
+	width:500px;
+	margin-top:30px;
+}
+/*****修改密码页面样式*****/
+#button_submit_pwd a{
+	display:block;
+	width:80px;
+	height:31px;
+	margin-left:210px;
+	background:url("../images/button_01.gif") -8px 0;
+}
+#button_submit_pwd a:hover{
+	background:url("../images/button_01.gif") -98px 0;
+}
+/*****用户信息页面样式*****/
+#button_update_password a{
+	display:block;
+	width:80px;
+	height:31px;
+	margin-left:210px;
+	background:url("../images/button_02.gif") -8px 0;
+}
+#button_update_password a:hover{
+	background:url("../images/button_02.gif") -98px 0;
+}
+#button_tool{
+	margin-left:180px;
+}
+#button_submit_info a{
+	display:block;
+	width:80px;
+	height:31px;
+	float:left;
+	background:url("../images/button_01.gif") -8px 0;
+}
+#button_submit_info a:hover{
+	background:url("../images/button_01.gif") -98px 0;
+}
+#button_back_info a{
+	display:block;
+	width:80px;
+	height:31px;
+	float:right;
+	background:url("../images/button_06.gif") -8px 0;
+}
+#button_back_info a:hover{
+	background:url("../images/button_06.gif") -98px 0;
+}
+#admin_main_form{
+	width:500px;
+	margin-top:30px;
+}
